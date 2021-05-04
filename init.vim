@@ -41,7 +41,7 @@ let g:lightline = {
 
 
 let g:startify_custom_header = startify#center([
-\ 'welcome back pai.',
+\ '🦕 hey, pai 🍱',
 \ ])
 
 
