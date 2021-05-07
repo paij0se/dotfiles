@@ -4,7 +4,6 @@ Plug 'ap/vim-css-color'
 Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'wakatime/vim-wakatime'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
@@ -29,8 +28,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-snippets',
   \ 'coc-docker',
-  \ 'coc-pyright',
-  \ 'coc-go'
+  \ 'coc-pyright'
   \ ]
 
 let g:lightline = {
