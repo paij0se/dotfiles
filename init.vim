@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'vim-syntastic/syntastic'
-Plug 'rust-lang/rust.vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
@@ -24,7 +23,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-json',
-  \ 'coc-rust-analyzer',
   \ 'coc-pairs',
   \ 'coc-snippets',
   \ 'coc-docker',
