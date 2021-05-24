@@ -24,6 +24,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-json',
+  \ 'coc-discord-rpc',
   \ 'coc-pairs',
   \ 'coc-snippets',
   \ 'coc-docker',
