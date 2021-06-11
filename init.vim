@@ -10,7 +10,9 @@ Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'honza/vim-snippets'
+Plug 'sbdchd/neoformat'
 Plug 'airblade/vim-gitgutter'
+Plug 'liuchengxu/space-vim-dark'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'mhinz/vim-startify'
 call plug#end()
