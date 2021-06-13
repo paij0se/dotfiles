@@ -6,6 +6,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -30,6 +31,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-snippets',
   \ 'coc-docker',
+  \ 'coc-go',
   \ 'coc-pyright'
   \ ]
 
@@ -47,4 +49,3 @@ let g:startify_custom_header = startify#center([
 
 colorscheme material
 set number
-
