@@ -11,6 +11,15 @@ Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'honza/vim-snippets'
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+" REACT SECTION
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
 Plug 'sbdchd/neoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/space-vim-dark'
@@ -48,4 +57,4 @@ let g:startify_custom_header = startify#center([
 
 
 colorscheme material
-set number
+set number relativenumber
