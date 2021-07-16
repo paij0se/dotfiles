@@ -12,6 +12,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'honza/vim-snippets'
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'ollykel/v-vim'
 " REACT SECTION
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
@@ -41,6 +43,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-docker',
   \ 'coc-go',
+  \ 'coc-elixir',
   \ 'coc-pyright'
   \ ]
 
