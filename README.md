@@ -1,7 +1,7 @@
 # dotfiles
 my dotfiles :D
 
-this repo have my neovim configuration and zsh
+this repo have my neovim configuration, alacritty and zsh
 
-<img src="caucho.png"/>
+<img src="https://cdn.discordapp.com/attachments/820472030474272769/886072287487479858/caucho.png"/>
 
