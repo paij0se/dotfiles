@@ -34,6 +34,7 @@ filetype indent plugin on
 
 syntax on
 
+
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
