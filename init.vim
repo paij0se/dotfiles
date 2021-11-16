@@ -14,6 +14,11 @@ Plug 'honza/vim-snippets'
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ollykel/v-vim'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
 " REACT SECTION
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
@@ -21,7 +26,8 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-
+" Solidity
+Plug 'tomlion/vim-solidity'
 Plug 'sbdchd/neoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/space-vim-dark'
@@ -58,7 +64,6 @@ let g:lightline = {
 let g:startify_custom_header = startify#center([
 \ '🦕 hey, pai 🍱',
 \ ])
-
 
 colorscheme material
 set number relativenumber
