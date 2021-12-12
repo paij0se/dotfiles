@@ -14,10 +14,7 @@ Plug 'honza/vim-snippets'
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ollykel/v-vim'
-" post install (yarn install | npm install) then load plugin only for editing supported files
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 " REACT SECTION
 Plug 'maxmellon/vim-jsx-pretty'
@@ -48,6 +45,7 @@ let g:coc_global_extensions = [
   \ 'coc-discord-rpc',
   \ 'coc-pairs',
   \ 'coc-snippets',
+  \ 'coc-deno',
   \ 'coc-docker',
   \ 'coc-go',
   \ 'coc-elixir',
