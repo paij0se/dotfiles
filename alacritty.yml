@@ -1,8 +1,0 @@
-import:
- # put your user here
-  - /home/pai/.config/alacritty/rose-pine.yml
-background_opacity: 0.90
-font:
-  normal:
-    family: DroidSansMono Nerd Font
-    style: Book
