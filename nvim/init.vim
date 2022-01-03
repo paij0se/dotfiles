@@ -32,6 +32,9 @@ filetype indent plugin on
 
 syntax on
 
+map <C-t> :tabnew .<CR> " new tab ctrl+t
+map <C-w> :tabclose<CR> " close tab ctrl+w
+map <C-n> :NERDTree<CR> " ctrl+n to open tree
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
