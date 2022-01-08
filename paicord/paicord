@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+// this module record the screen with ffmpeg
+// Just change the parameters
+// npm i paicord -g
+
+const paicord = require("paicord")
+//                    resolution | fps | video time | file name
+paicord.screenRecord("1366x768", 30, "00:00:30", "paicord"+Date.now()+".mp4")
