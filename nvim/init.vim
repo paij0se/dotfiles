@@ -26,6 +26,9 @@ Plug 'liuchengxu/space-vim-dark' " Themes
 Plug 'kaicataldo/material.vim', { 'branch': 'main' } " Themes
 Plug 'wadackel/vim-dogrun'
 Plug 'mhinz/vim-startify' " The cool line on the buttom
+" Dart & Flutter plugins
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 filetype plugin indent on
@@ -64,5 +67,5 @@ let g:startify_custom_header = startify#center([
 \ '🦕 hey, pai 🍱',
 \ ])
 
-colorscheme koehler
-set number relativenumber
+colorscheme material
+set number
