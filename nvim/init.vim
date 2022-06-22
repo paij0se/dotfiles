@@ -15,6 +15,7 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'} " Elixir st
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " preview markdown
 Plug 'prettier/vim-prettier', { 'do': 'npm install' } " formatting code
 Plug 'maxmellon/vim-jsx-pretty' " React stuff
+Plug 'github/copilot.vim' " Copilot???
 Plug 'pangloss/vim-javascript'  " React stuff
 Plug 'peitalin/vim-jsx-typescript'  " React stuff
 Plug 'SirVer/ultisnips'  " React stuff
