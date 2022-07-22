@@ -26,6 +26,7 @@ Plug 'sbdchd/neoformat' " Format (other languages like c)
 Plug 'airblade/vim-gitgutter' " git
 Plug 'liuchengxu/space-vim-dark' " Themes
 Plug 'kaicataldo/material.vim', { 'branch': 'main' } " Themes
+Plug 'catppuccin/nvim', {'as': 'catppuccin'} " Themes
 Plug 'wadackel/vim-dogrun'
 Plug 'mhinz/vim-startify' " The cool line on the buttom
 " Dart & Flutter plugins
@@ -90,5 +91,5 @@ let g:lightline = {
        \ }
 
 
-colorscheme material
+colorscheme catppuccin
 set number
