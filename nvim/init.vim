@@ -16,6 +16,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " previ
 Plug 'prettier/vim-prettier', { 'do': 'npm install' } " formatting code
 Plug 'maxmellon/vim-jsx-pretty' " React stuff
 Plug 'github/copilot.vim' " Copilot???
+Plug 'deoplete-plugins/deoplete-clang' " Clang completion
 Plug 'pangloss/vim-javascript'  " React stuff
 Plug 'peitalin/vim-jsx-typescript'  " React stuff
 Plug 'SirVer/ultisnips'  " React stuff
@@ -40,6 +41,9 @@ syntax on
 map <C-t> :tabnew .<CR> " new tab ctrl+t
 map <C-w> :tabclose<CR> " close tab ctrl+w
 map <C-n> :NERDTree<CR> " ctrl+n to open tree
+map <C-s> :Copilot disable<CR> " ctrl+c to disable copilot
+map <C-p> :Neoformat<CR> " formatting
+
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
@@ -57,16 +61,34 @@ let g:coc_global_extensions = [
   \ 'coc-pyright'
   \ ]
 
+
+
+let g:startify_custom_header = startify#center([
+\ '🦕 hey, pai 🍱',
+\ ])
+
+let g:ale_linters = {
+    \ 'python': ['pylint'],
+    \ 'vim': ['vint'],
+    \ 'cpp': ['clang'],
+    \ 'c': ['clang']
+\}
+
+" custom setting for clangformat
+let g:neoformat_cpp_clangformat = {
+    \ 'exe': 'clang-format',
+    \ 'args': ['--style="{IndentWidth: 4}"']
+\}
+let g:neoformat_enabled_cpp = ['clangformat']
+let g:neoformat_enabled_c = ['clangformat']
+
+
 let g:lightline = {
        \ 'colorscheme': 'one',
        \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2"  },
        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3"  }
        \ }
 
-
-let g:startify_custom_header = startify#center([
-\ '🦕 hey, pai 🍱',
-\ ])
 
 colorscheme material
 set number
